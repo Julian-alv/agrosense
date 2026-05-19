@@ -22,3 +22,21 @@ body{
         background-position: right center;
     }
 }
+
+.card{
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width: 60px;
+    margin-bottom: 10px;
+}
