@@ -10,16 +10,18 @@ body{
     rgba(0,0,0,0.5)),
     url('img/hero.png');
 
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #000;
+
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 768px){
     .hero{
-        background-size: cover;
-        background-position: right center;
+        background-position: center;
     }
 }
 
@@ -28,15 +30,18 @@ body{
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: 0.3s;
+    transition: 0.3s ease;
     text-align: center;
+    height: 100%;
 }
 
 .card:hover{
     transform: translateY(-8px);
 }
 
-.card img{
-    width: 60px;
-    margin-bottom: 10px;
+.card-img-top{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
